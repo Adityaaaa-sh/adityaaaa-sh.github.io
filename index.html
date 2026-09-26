@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Aditya Sharma | AI/ML Engineer & Financial Analyst</title>
   <meta name="description" content="Aditya Sharma - B.Tech CSE (AI & ML) student at PCCOE Pune, CFA Level 1 candidate and national-level athlete. Building intelligent systems at the intersection of machine learning and finance.">
-  <meta name="theme-color" content="#07080a">
+  <meta name="theme-color" content="#0a0b0d">
   <meta name="author" content="Aditya Sharma">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aditya Sharma | AI/ML Engineer & Financial Analyst">
@@ -611,6 +611,61 @@
     @media (prefers-reduced-motion: reduce) {
       * { scroll-behavior: auto !important; transition: none !important; }
     }
+
+    /* ---- Executive theme ---- */
+    :root {
+      --bg-dark: #0a0b0d; --bg-surface: #101216;
+      --card-bg: #101216; --card-bg-hover: #13161b;
+      --card-border: rgba(255,255,255,0.08); --card-border-hover: rgba(194,168,120,0.45);
+      --accent-gold: #c2a878; --accent-gold-bright: #e4d6b4; --accent-gold-dark: #8f7b4c;
+      --text-main: #eceef2; --text-muted: #9aa1ad; --text-dim: #6b7280;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+    body { background-image: none; }
+    .navbar { border-radius: 6px; padding: 12px 28px; box-shadow: 0 8px 30px rgba(0,0,0,.5); background: rgba(10,11,13,.88); }
+    .nav-avatar { background: transparent; border: 1px solid var(--accent-gold); color: var(--accent-gold); box-shadow: none; border-radius: 4px; }
+    .nav-title { font-family: var(--font-serif); font-weight: 600; letter-spacing: .4px; }
+    .nav-links a { font-size: .8rem; letter-spacing: 1.2px; text-transform: uppercase; }
+    .glass-card { border-radius: 8px; padding: 48px; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .glass-card::before { display: none; }
+    .glass-card:hover, .stat-card:hover, .project-card:hover { transform: none; box-shadow: none; }
+    .hero-card { background: var(--card-bg); border-left: 2px solid var(--accent-gold); padding: 72px 56px; }
+    .hero-name { font-size: .8rem; letter-spacing: .35em; text-transform: uppercase; color: var(--accent-gold); font-weight: 600; margin-bottom: 20px; }
+    .hero-badge-tag { border-radius: 2px; background: transparent; border: 1px solid rgba(194,168,120,.35); color: var(--text-muted); font-weight: 500; letter-spacing: 1.6px; font-size: .72rem; }
+    .hero-quote { font-weight: 500; letter-spacing: -.5px; }
+    .hero-quote em { background: none; -webkit-text-fill-color: var(--accent-gold-bright); color: var(--accent-gold-bright); }
+    .btn { border-radius: 4px; text-transform: uppercase; letter-spacing: 1.4px; font-size: .76rem; padding: 15px 28px; }
+    .btn-gold { background: var(--accent-gold); color: #0a0b0d; box-shadow: none; }
+    .btn-gold:hover { background: var(--accent-gold-bright); transform: none; box-shadow: none; }
+    .btn-outline { background: transparent; border-color: rgba(255,255,255,.22); }
+    .btn-outline:hover { background: transparent; transform: none; border-color: var(--accent-gold); }
+    .stat-card, .project-card { border-radius: 8px; background: var(--card-bg); backdrop-filter: none; }
+    .stat-card:hover, .project-card:hover { border-color: var(--card-border-hover); background: var(--card-bg-hover); }
+    .contact-icon { border-radius: 4px; background: transparent; border-color: rgba(194,168,120,.3); color: var(--accent-gold); }
+    .badge { border-radius: 3px; background: transparent; border-color: rgba(194,168,120,.28); color: var(--text-muted); }
+    .role-date { border-radius: 3px; background: transparent; }
+    .cta-card { background: var(--card-bg); padding: 80px 32px; }
+    .wa-float { position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 52px; height: 52px; border-radius: 50%; background: var(--accent-gold); color: #0a0b0d; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; z-index: 900; box-shadow: 0 6px 20px rgba(0,0,0,.5); text-decoration: none; }
+    .wa-float:hover { background: var(--accent-gold-bright); }
+    @media (min-width: 651px) { .hero-quote { font-size: 2.7rem; } }
+    @media (max-width: 650px) { .hero-card { padding: 44px 24px; } .glass-card { padding: 32px 22px; } }
+
+    .proj-feature { display: block; padding: 40px; }
+    .proj-meta { font-size: .72rem; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent-gold); font-weight: 600; margin-bottom: 10px; }
+    .proj-feature .project-title { font-size: 1.65rem; line-height: 1.3; margin-top: 0; }
+    .proj-feature .project-desc { font-size: .95rem; max-width: 860px; }
+    .proj-cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; margin-bottom: 28px; }
+    .proj-h { font-size: .72rem; letter-spacing: 1.6px; text-transform: uppercase; color: var(--text-dim); font-weight: 700; margin-bottom: 12px; }
+    .proj-list { list-style: none; display: grid; gap: 12px; }
+    .proj-list li { font-size: .88rem; color: var(--text-muted); line-height: 1.6; padding-left: 16px; position: relative; }
+    .proj-list li::before { content: ''; position: absolute; left: 0; top: .7em; width: 5px; height: 1px; background: var(--accent-gold); }
+    .proj-list strong { color: var(--text-main); font-weight: 600; }
+    .proj-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--card-border); border: 1px solid var(--card-border); border-radius: 6px; overflow: hidden; margin-bottom: 30px; }
+    .proj-stats div { background: var(--bg-dark); padding: 18px 20px; }
+    .proj-stats b { display: block; font-family: var(--font-serif); font-size: 1.6rem; color: var(--accent-gold-bright); font-weight: 600; }
+    .proj-stats span { font-size: .74rem; color: var(--text-muted); letter-spacing: .4px; }
+    .proj-team { margin-top: 24px; font-size: .78rem; color: var(--text-dim); letter-spacing: .5px; }
+    @media (max-width: 800px) { .proj-cols { grid-template-columns: 1fr; gap: 28px; } .proj-feature { padding: 28px 22px; } }
   </style>
 </head>
 <body>
@@ -624,7 +679,7 @@
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Case Studies</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -636,6 +691,7 @@
 
     <!-- Hero / Main Headline Card -->
     <section class="glass-card hero-card">
+      <p class="hero-name">Aditya Sharma</p>
       <div class="hero-badge-tag">
         <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg> AI/ML & Financial Analytics
       </div>
@@ -644,17 +700,16 @@
       </h1>
       <div class="action-buttons">
         <a href="#projects" class="btn btn-gold">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg> View Case Studies
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg> View Projects
         </a>
-        <a href="mailto:Adityasharma.runner@gmail.com" class="btn btn-outline">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg> Get in Touch
-        </a>
+        <a href="https://wa.me/919699477347?text=Hi%20Aditya%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn btn-outline"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Get in Touch</a>
         <a href="https://linkedin.com/in/aditya-sharma-51067b384" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn Profile
         </a>
         <a href="https://github.com/Adityaaaa-sh" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub
         </a>
+        <a href="mailto:adityasharma.06work@gmail.com" class="btn btn-outline"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email</a>
       </div>
     </section>
 
@@ -692,7 +747,7 @@
           <div>
             <div class="contact-text-label">Email</div>
             <div class="contact-text-val">
-              <a href="mailto:Adityasharma.runner@gmail.com">Adityasharma.runner@gmail.com</a>
+              <a href="mailto:adityasharma.06work@gmail.com">adityasharma.06work@gmail.com</a>
             </div>
           </div>
         </div>
@@ -700,8 +755,8 @@
         <div class="contact-item">
           <div class="contact-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div>
-            <div class="contact-text-label">Phone</div>
-            <div class="contact-text-val">+91 9699477347</div>
+            <div class="contact-text-label">WhatsApp</div>
+            <div class="contact-text-val"><a href="https://wa.me/919699477347?text=Hi%20Aditya%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer">+91 96994 77347 · Chat now</a></div>
           </div>
         </div>
 
@@ -759,61 +814,81 @@
 
     </div>
 
-    <!-- Case Studies / Projects Section -->
+    <!-- Projects Section -->
     <section class="glass-card" id="projects">
       <div class="section-header">
         <span class="section-tag">Selected Work</span>
-        <h2 class="section-title">Technical Case Studies</h2>
+        <h2 class="section-title">Projects</h2>
       </div>
 
-      <div class="project-grid">
-        
-        <div class="project-card">
+      <article class="project-card proj-feature">
+        <div class="proj-meta">Smart India Hackathon 2026 &middot; Problem Statement 26203 &middot; Smart Vehicles (Software)</div>
+        <h3 class="project-title">Edge-AI Telemetry &amp; Adaptive Rider Intelligence Platform</h3>
+        <p class="project-desc">
+          An AI telemetry platform that retrofits mid-capacity motorcycles into connected, self-diagnosing vehicles using only a Bluetooth OBD-II bridge and the rider&rsquo;s smartphone. It replaces hard-coded shift indicators and fixed service intervals with adaptive, on-device intelligence, delivering enterprise-grade telemetry at a fraction of OEM cost. Prototype platform: Triumph Scrambler 400X. Delivered against a multi-year roadmap: data acquisition and signal processing, machine learning and anomaly detection, then edge hardware and rider dashboard.
+        </p>
+        <div class="proj-cols">
+          <div><div class="proj-h">Solution &amp; Architecture</div><ul class="proj-list"><li><strong>Non-invasive vehicle interface:</strong> Bluetooth ELM327 bridge over the Euro 5 / BS6 OBD-II port, streaming CAN-bus parameters (RPM, throttle position, engine load, speed) with no wiring modifications.</li>
+<li><strong>Multi-stream sensor fusion:</strong> merged live ECU telemetry with the smartphone's 6-axis IMU and GPS into a single time-aligned data stream.</li>
+<li><strong>Edge intelligence:</strong> quantized TensorFlow Lite models run on-device for unsupervised rider profiling (K-Means) and supervised shift prediction, producing load-responsive gear-shift cues and live fuel-efficiency scoring with zero cloud latency.</li>
+<li><strong>Predictive maintenance:</strong> condition-based wear tracking and anomaly detection (drive-chain slack, engine knock, consumables) replacing fixed-distance service schedules.</li>
+<li><strong>Rider safety layer:</strong> high-G impact logic to separate potholes from true tip-overs, automated SOS with the last 60 seconds of blackbox telemetry and GPS dispatch, and lean-angle / low-traction alerts.</li></ul></div>
           <div>
-            <div class="project-type">AI & NLP Project</div>
-            <h3 class="project-title">Intelligent NLP Chatbot Engine</h3>
-            <p class="project-desc">
-              Designed and built an end-to-end conversational agent featuring intent classification, entity extraction, and contextual response pipelines. Reached ~80% query classification accuracy using NLTK and Scikit-learn.
-            </p>
-          </div>
-          <div class="tag-cloud">
-            <span class="badge">Python</span>
-            <span class="badge">Scikit-learn</span>
-            <span class="badge">NLP</span>
+            <div class="proj-h">Engineering Challenges Addressed</div><ul class="proj-list"><li>Vibration and sensor noise &rarr; digital signal filtering (MATLAB / Python)</li>
+<li>Asynchronous wireless latency &rarr; edge buffering and quantized inference</li>
+<li>Thermal and parasitic power load &rarr; dynamic polling and auto-sleep</li>
+<li>OEM telemetry fragmentation &rarr; modular diagnostic abstraction layer</li></ul>
+            <div class="proj-h" style="margin-top:22px">Business &amp; Societal Impact</div><ul class="proj-list"><li><strong>Riders:</strong> lower fuel spend, reduced clutch and drivetrain wear, smoother riding habits through real-time cues and post-ride scoring.</li>
+<li><strong>Sustainability:</strong> optimized shifting and less engine lugging reduce tailpipe CO&#8322; and unburned hydrocarbons.</li>
+<li><strong>B2B mobility:</strong> anonymized, high-resolution telemetry for insurance risk modelling and municipal road-hazard detection.</li></ul>
           </div>
         </div>
+        <div class="proj-cols"><div><div class="proj-h">Key Design Decisions &amp; Trade-offs</div><ul class="proj-list"><li><strong>On-device inference over cloud:</strong> removes connectivity dependence, cuts latency and keeps ride data private.</li>
+<li><strong>Smartphone as compute hub:</strong> near-zero hardware cost and universal fit; dedicated edge hardware is deferred to the final roadmap phase.</li>
+<li><strong>Standard OBD-II over OEM integrations:</strong> plug-and-play across Euro 5 / BS6 bikes, isolated behind an abstraction layer.</li>
+<li><strong>Unsupervised profiling first:</strong> rider styles are learned without labelled data before supervised shift prediction is layered on.</li></ul></div><div><div class="proj-h">Key Learnings</div><ul class="proj-list"><li>Building ML on noisy, asynchronous, resource-constrained real-world sensor data, not clean datasets.</li>
+<li>Designing for the edge: quantization, buffering and power budgets shape the model as much as accuracy does.</li>
+<li>Translating a technical system into measurable value across fuel, maintenance, safety and insurance.</li>
+<li>Making a feasibility case: phased roadmap, risk mitigation and grounding in peer-reviewed IEEE research.</li></ul></div></div>
+        <div class="proj-h">Skills Developed</div>
+        <div class="tag-cloud" style="margin-top:10px"><span class="badge">Vehicle Diagnostics (OBD-II / CAN)</span><span class="badge">Edge ML (TensorFlow Lite)</span><span class="badge">Sensor Fusion (IMU + GPS)</span><span class="badge">Signal Processing</span><span class="badge">Unsupervised Learning (K-Means)</span><span class="badge">XGBoost / Scikit-learn</span><span class="badge">Predictive Maintenance</span><span class="badge">Systems Architecture</span><span class="badge">Technical Research (IEEE)</span></div>
+        <div class="proj-h" style="margin-top:22px">Tech Stack</div>
+        <div class="tag-cloud" style="margin-top:10px"><span class="badge">Python</span><span class="badge">Pandas / NumPy</span><span class="badge">TensorFlow Lite</span><span class="badge">Scikit-learn</span><span class="badge">XGBoost</span><span class="badge">MATLAB</span><span class="badge">Android</span><span class="badge">ELM327 / OBD-II</span></div>
+        <div class="proj-h" style="margin-top:22px">Relevant Roles</div>
+        <div class="tag-cloud" style="margin-top:10px"><span class="badge">Machine Learning Engineer</span><span class="badge">Edge / Embedded AI</span><span class="badge">Data Scientist</span><span class="badge">IoT &amp; Mobility Tech</span><span class="badge">Software Engineer (ML)</span></div>
+      </article>
 
-        <div class="project-card">
-          <div>
-            <div class="project-type">Full-Stack Engineering</div>
-            <h3 class="project-title">Responsive Enterprise Web App</h3>
-            <p class="project-desc">
-              Constructed a complete full-stack web application incorporating modern responsive design, backend API logic, database integration, and modular software design principles for real-world functionality.
-            </p>
-          </div>
-          <div class="tag-cloud">
-            <span class="badge">JavaScript</span>
-            <span class="badge">React</span>
-            <span class="badge">HTML/CSS</span>
-          </div>
+      <article class="project-card proj-feature" style="margin-top:24px">
+        <div class="proj-meta">Applied Machine Learning &middot; Financial Modeling &amp; AI &middot; PCCOE</div>
+        <h3 class="project-title">ML-Driven Equity Price Prediction &amp; Model Benchmarking: Reliance Industries (NSE)</h3>
+        <p class="project-desc">
+          A financial modeling and prediction dashboard built on three decades of NSE data (1994&ndash;2025) to estimate the closing price of Reliance Industries. The workflow covers data cleaning, statistical feature selection, multi-model training and a four-metric evaluation framework, ending in a recommendation on model fit and its limits.
+        </p>
+        <div class="proj-stats">
+          <div><b>0.9999</b><span>R&sup2; (Linear Regression)</span></div>
+          <div><b>&#8377;4.78</b><span>Mean absolute error</span></div>
+          <div><b>0.52%</b><span>MAPE</span></div>
+          <div><b>3</b><span>Models benchmarked</span></div>
         </div>
-
-        <div class="project-card">
-          <div>
-            <div class="project-type">Quantitative Research</div>
-            <h3 class="project-title">Stock Market & Financial Data Engine</h3>
-            <p class="project-desc">
-              Executed quantitative data research analyzing emerging IPO valuations, equity historical patterns, and market indicators leveraging Python data analytics libraries for structured financial insights.
-            </p>
-          </div>
-          <div class="tag-cloud">
-            <span class="badge">Pandas</span>
-            <span class="badge">Market Research</span>
-            <span class="badge">Valuation</span>
-          </div>
+        <div class="proj-cols">
+          <div><div class="proj-h">Approach</div><ul class="proj-list"><li>Cleaned and validated a multi-decade daily price series (handled NaN / infinite values).</li>
+<li>Applied SelectKBest (f_regression) to shortlist the strongest predictors from nine candidates: Open, High, Low, Previous Close, VWAP.</li>
+<li>Trained and compared Linear Regression, Random Forest and Gradient Boosting on an 80/20 split.</li>
+<li>Evaluated with R&sup2;, MAE, RMSE and MAPE.</li></ul></div>
+          <div><div class="proj-h">Findings &amp; Model Risk Awareness</div><ul class="proj-list"><li>Linear Regression delivered the best result: MAE &#8377;4.78, RMSE &#8377;8.43. Random Forest (MAE &#8377;5.33) and Gradient Boosting (MAE &#8377;7.32) followed.</li>
+<li>Results reflect a random split; historical accuracy does not guarantee future market performance.</li>
+<li>Recommended next step: time-based validation and lagged features for a realistic forecasting setup.</li></ul></div>
         </div>
-
-      </div>
+        <div class="proj-cols"><div><div class="proj-h">Key Design Decisions &amp; Trade-offs</div><ul class="proj-list"><li><strong>Statistical feature selection first:</strong> SelectKBest trims redundancy among highly correlated price features.</li>
+<li><strong>Baseline before complexity:</strong> a linear model was benchmarked against ensembles, and the simplest model won.</li>
+<li><strong>Multi-metric evaluation:</strong> R&sup2; for fit, MAE and RMSE for rupee error and outlier sensitivity, MAPE for scale-free comparison.</li></ul></div><div><div class="proj-h">Key Learnings</div><ul class="proj-list"><li>Simple models can beat complex ones when features are strongly linear, so always keep a baseline.</li>
+<li>Validation design matters in finance: random splits versus time-based validation, and leakage awareness.</li>
+<li>Reporting results with their limits, the way a decision-maker needs them.</li></ul></div></div>
+        <div class="proj-h">Skills Developed</div>
+        <div class="tag-cloud" style="margin-top:10px"><span class="badge">Financial Analytics</span><span class="badge">Regression Modeling</span><span class="badge">Feature Selection</span><span class="badge">Model Evaluation (R&sup2;, MAE, RMSE, MAPE)</span><span class="badge">Python (Scikit-learn, Pandas, NumPy)</span><span class="badge">Excel Dashboarding</span></div>
+        <div class="proj-h" style="margin-top:22px">Relevant Roles</div>
+        <div class="tag-cloud" style="margin-top:10px"><span class="badge">Quantitative Analyst</span><span class="badge">Financial Data Analyst</span><span class="badge">Fintech Analytics</span><span class="badge">Applied ML Engineer</span></div>
+      </article>
     </section>
 
     <!-- Work, Leadership & Athletics Section -->
@@ -869,9 +944,8 @@
         Actively interviewing for internships and technical roles across Data Analytics, Machine Learning Model Development, Full-Stack Software Engineering, and Fintech Analytics.
       </p>
       <div class="action-buttons" style="justify-content: center;">
-        <a href="mailto:Adityasharma.runner@gmail.com" class="btn btn-gold">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Send Direct Email
-        </a>
+        <a href="https://wa.me/919699477347?text=Hi%20Aditya%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn btn-gold"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Message on WhatsApp</a>
+        <a href="mailto:adityasharma.06work@gmail.com" class="btn btn-outline"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Send Email</a>
         <a href="https://linkedin.com/in/aditya-sharma-51067b384" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> Connect on LinkedIn
         </a>
@@ -881,6 +955,7 @@
     <footer>
       <p>© 2026 Aditya Sharma · Pune, India</p>
     </footer>
+  <a class="wa-float" href="https://wa.me/919699477347?text=Hi%20Aditya%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
 
   </main>
 
